@@ -19,6 +19,8 @@ Actor TangoStimpack : Stimpack replaces Stimpack
 }
 
 // Note the original actor name is medIkit, while I'm naming it medkit instead
+// Replaced by the ZScript counterpart
+/*
 Actor TangoMedkit : Medikit replaces Medikit
 {
 	Tag "Medkit"
@@ -32,6 +34,7 @@ Actor TangoMedkit : Medikit replaces Medikit
 		Stop
 	}
 }
+*/
 
 Actor TangoArmorBonus : ArmorBonus replaces ArmorBonus
 {

@@ -3,7 +3,7 @@
 
 /*** GENERAL/COMMON ***/
 #include "actors/Keys.dec"
-#include "actors/Player.dec"
+//#include "actors/Player.dec"
 #include "actors/Terrain.dec"
 #include "actors/Snow.dec"
 #include "actors/Barrel.dec"

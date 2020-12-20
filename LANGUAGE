@@ -125,3 +125,6 @@ PD_REDSO = "\c[TangoRedLight]Red \ccskull required";
 PD_YELLOWSO = "\ckYellow \ccskull required";
 
 // ** POWERUPS **
+
+// ** SUPERCHARGE-X
+LIFESPHERE = "\ccYou got an \c[TangoGreen]extra \cclife!";

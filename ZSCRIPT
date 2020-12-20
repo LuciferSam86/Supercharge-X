@@ -32,3 +32,9 @@ version "3.2.0"
 
 #include "scripts/t_m8f_is_settings.zs"
 #include "scripts/t_m8f_is_event_handler.zs"
+
+// Scripts used by Supercharge-X
+#include "scripts/actors/player.zs"
+#include "scripts/actors/LifeSphere.zs"
+#include "scripts/actors/HealthArmorPowerups.zs"
+#include "scripts/actors/spawners.zs"
