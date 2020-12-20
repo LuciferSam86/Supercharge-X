@@ -1,0 +1,15 @@
+// ** Items **
+// Dynamic light for the extralife sphere
+PulseLight LIFESPHERELIGHT
+{
+Color 0.7 0.0 0.4
+Size 40
+SecondarySize 42
+interval 2.0
+Offset 0 16 0
+}
+
+Object LIFESPHERE
+{
+Frame XLIF { Light LIFESPHERELIGHT }
+}

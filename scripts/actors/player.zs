@@ -45,6 +45,8 @@ class TangoDoomPlayer : DoomPlayer
 		{
 			damageType = prevType;
 			special1 = prevSpecial;
+         
+          //A_PrintBold("You have been ressurected by the life sphere!",0);
 			
 			// Get the max health for the actor
             health = GetMaxHealth();
@@ -55,9 +57,27 @@ class TangoDoomPlayer : DoomPlayer
             // Take one LifeSphere
             TakeInventory("LifeSphere", 1);
             
-            // Give a green armor
-            GiveInventory("TangoGreenArmor",1);
-		}
+            // Give a temporary god mode
+            GiveInventory("GodOneUp",1);
+            
+            // Count how many Life Spheres the player have
+            int countLifeSpheres;
+            countLifeSpheres = CountInv("LifeSphere");
+            string message;
+            
+            if(countLifeSpheres > 0)
+            {  
+               // The player has at least 1 sphere
+               message = String.Format("\ccYou still have \c[TangoGreen]%i\cc lives",countLifeSpheres);            
+            }
+            else
+            {
+               // No more spheres
+               message = "\c[TangoRedLight]You have no more lives!";
+            }
+            
+            A_PrintBold(message);
+ 		}
 		return newDam;
 	}
    
